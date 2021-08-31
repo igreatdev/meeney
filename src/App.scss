@@ -116,6 +116,21 @@
     }
 
   }
+  @media (min-width: 1800px) {
+    .main-container {
+      padding: 10px 6rem;
+    }
+    .g-xxl-4, .gx-xxl-4 {
+      --bs-gutter-x: 3rem;
+    }
+
+    .profile-details {
+      .profile-img {
+        max-width: 125px;
+        max-height: 125px;
+      }
+    }
+  }
 
   .bg-default {
     background-color: $background_color;
