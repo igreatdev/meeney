@@ -1,0 +1,454 @@
+@import 'styles/var';
+@import '~bootstrap/scss/bootstrap.scss';
+
+.app {
+  .header {
+    height: 263px;
+    background: transparent linear-gradient(267deg, $primary_color_2 0%, $primary_color 100%) 0% 0% no-repeat padding-box;
+    // border: 1px solid #707070;
+    border-radius: 0px 0px $teritary_radius $teritary_radius;
+
+    .semi-circle {
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      background: transparent linear-gradient(180deg, #FFFFFF00 0%, #D900D533 100%) 0% 0% no-repeat padding-box;
+      z-index: 1;
+
+      &.top {
+        transform: translateY(-80%) !important;
+      }
+      &.left {
+        transform: translateX(-62%) translateY(-62%) !important;
+      }
+    }
+
+    .main-container {
+      padding-top: 90px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .user {
+      .profile-img {
+        width: 82px;
+        height: 82px;
+      }
+
+      .user-details {
+        color: $white;
+        font: normal normal normal 20px/16px $primary_font;
+      }
+    }
+
+    .header-menu {
+      .menu {
+        .menu-item-icon {
+          color: $white;
+          font-size: 32px;
+
+          .badge {
+            width: 25px;
+            height: 25px;
+            font: normal normal bold 10px/16px $primary_font;
+            border-radius: 100%;
+          }
+
+          .menu-img {
+            width: 45px;
+            height: 25px;
+            margin-bottom: .5rem;
+          }
+        }
+      }
+
+      .search {
+        background-color: $primary_color;
+        border-radius: $primary_radius;
+        
+        input, .input-group-text {
+          background-color: $primary_color;
+          border-radius: $primary_radius;
+          border: none;
+          height: 60px;
+        }
+
+        .input-group-text {
+          color: $yellow;
+          font-size: 30px;
+          font-weight: normal;
+        }
+
+        input {
+          color: $white;
+          min-width: 250px;
+          font: normal normal normal 20px/16px $secondary_font;
+        }
+      }
+
+      .brand {
+        .brand-img {
+          width: 80px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .main-container {
+    padding: 10px 6.2rem;
+  }
+  @include media-breakpoint-down(md) {
+    .main-container {
+      padding: 10px 1.5rem;
+    }
+
+  }
+  @include media-breakpoint-up(md) {
+    .main-container {
+      padding: 10px 2rem;
+    }
+
+  }
+  @include media-breakpoint-up(xxl) {
+    .main-container {
+      padding: 10px 3.7rem;
+    }
+
+  }
+
+  .bg-default {
+    background-color: $background_color;
+  }
+  .bg-gray {
+    background-color: $gray-400;
+    // color: $white;
+  }
+
+  .card {
+    border-radius: $small_radius;
+    border: none;
+
+    .card-title {
+      color: $primary_color;
+    }
+
+    &.primary-radius {
+      border-radius: $primary_radius;
+    }
+  }
+
+  .btn-round {
+    border-radius: $secondary_radius;
+  }
+
+  img {
+    &.img-round {
+      border-radius: 100%;
+    }
+
+    &.primary-border {
+      border: 3px solid $primary_color;
+    }
+
+    &.primary-border-2 {
+      border: 3px solid $primary_color_2;
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      padding: 0px;
+
+      &::after {
+        display: none !important;
+        content: none;
+      }
+    }
+
+    .dropdown-menu {
+      border-radius: $small_radius;
+      border: none;
+      box-shadow: 0px 4px 8px #00000021;
+
+      .dropdown-item {
+        color: $primary_color;
+      }
+    }
+  }
+
+  .switch-account {
+    button {
+      .badge {
+        width: 25px;
+        height: 25px;
+        font: normal normal bold 10px/16px $primary_font;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .side-nav {
+    background-color: $primary_color;
+    border-radius: $primary_radius;
+    padding: 1.5rem;
+    margin-top: 24px;
+    
+    .nav-item, .nav-link {
+      color: $white;
+      font: normal normal 300 20px/47px $primary_font;
+
+      .nav-text {
+        margin-left: 16px;
+      }
+
+      &.active {
+        color: $yellow;
+      }
+    }
+  }
+
+  .my-pages {
+    margin-top: 102px;
+
+    .search {
+      border-radius: $primary_radius;
+      
+      input, .input-group-text {
+        color: $primary_font_color;
+        background-color: $background_color_darken_10;
+        border-radius: $primary_radius;
+        height: 30px;
+      }
+    }
+
+    .page {
+      background-color: $background_color;
+      margin: 6px -16px;
+      padding: 8px 16px;
+
+      .page-img {
+        width: 45px;
+        height: 45px;
+      }
+
+      .page-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+
+        .name {
+          color: $primary_color;
+          font: normal normal bold 15px/19px $primary_font;
+        }
+
+        .sub {
+          font: normal normal normal 10px/17px $primary_font;
+        }
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .main-tab {
+
+    .nav-item, .nav-link {
+      color: $primary_font_color;
+      font: normal normal normal 20px/16px $primary_font;
+      
+      &.active {
+        color: $primary_color;
+        font: normal normal bold 20px/16px $primary_font;
+        background: none;
+        border-color: transparent;
+        border-bottom: 6px solid $primary_color;
+      }
+    }
+    
+  }
+
+  .profile-details {
+    .profile-img {
+      // max-width: 125px;
+      max-height: 125px;
+    }
+
+    .name {
+      color: $primary_color;
+      font: normal normal bold 40px/26px $primary_font;
+    }
+    .username {
+      font: normal normal normal 20px/16px $primary_font;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      margin-right: 32px;
+      
+      .number {
+        color: $primary_color;
+        font: normal normal bold 18px/20px $secondary_font;
+      }
+      .label {
+        font: normal normal normal 10px/16px $primary_font;
+      }
+    }
+
+    .list-text {
+      font: normal normal normal 10px/16px $primary_font;
+    }
+  }
+
+  .share-card {
+    .form-control {
+      border-radius: $secondary_radius;
+      color: $primary_color;
+    }
+
+    .post-btn {
+      width: 120px;
+    }
+  }
+
+  .font-ext2 {
+    font-size: 130%;
+  }
+
+  .text-small {
+    font: normal normal normal 10px/16px $primary_font;
+  }
+
+  .post {
+    .post-img-container {
+      min-height: 330px;
+      border-radius: $primary_radius;
+    }
+    img{
+        &.post-img {
+        border-radius: $primary_radius;
+      }
+
+      &.user-img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .post-text {
+      font: normal normal normal 15px/21px $primary_font;
+    }
+
+    .reply-item {
+      .user-img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .user-details {
+        .name {
+          color: $primary_color;
+          font: normal normal bold 16px/16px $primary_font;
+        }
+
+        .reply-text {
+          font: normal normal normal 12px/15px $primary_font;
+        }
+      }
+    }
+
+    .user-details {
+      min-width: 60%;
+      .name {
+        color: $primary_color;
+        font: normal normal bold 19px/16px $primary_font;
+      }
+      .sub-details {
+        color: $primary_font_color;
+        font: normal normal normal 10px/16px $primary_font;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .post {
+      .post-img-container {
+        min-height: 100px;
+      }
+    }
+
+  }
+
+  .listing-item {
+    background-color: $secondary_color;
+
+    img{
+      &.list-img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .list-details {
+      .name {
+        color: $primary_color;
+        font: normal normal bold 19px/16px $primary_font;
+      }
+
+      .ant-progress-bg {
+        background-color: $yellow;
+      }
+    }
+  }
+
+  .pages {
+
+    .page {
+
+      .page-img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .page-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+
+        .name {
+          color: $primary_color;
+          font: normal normal bold 15px/16px $secondary_font;
+        }
+
+        .sub {
+          font: normal normal normal 10px/17px $primary_font;
+        }
+      }
+
+    }
+  }
+
+  .sidebar-tab {
+    margin-top: 80px;
+
+    .nav-item, .nav-link {
+      color: $primary_font_color;
+      font: normal normal normal 15px/16px $primary_font;
+      
+      &.active {
+        color: $primary_color;
+        font: normal normal bold 15px/16px $primary_font;
+        background: none;
+        border-color: transparent;
+        border-bottom: 6px solid $primary_color;
+      }
+    }
+    
+  }
+}

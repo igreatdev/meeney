@@ -1,0 +1,58 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+
+// Colors
+$primary_color: #490057;
+$primary_color_2: #A303A0;
+$secondary_color: #E8D8EC;
+$yellow_color: #FBB03B;
+$lemon_color: #8dc63f;
+
+$black: #000;
+$grey: #666666;
+$dark_grey: #4a4a4a;
+$white: #ffffff;
+$header_text_color: $primary_color;
+$body_text_color: $grey;
+$background_color: #F3F3F3;
+$background_color_darken_10: darken($background_color, 10%);
+$silver: #8591b0;
+
+
+// Custom Bootstrap colors
+$primary: $primary_color;
+$secondary: $secondary_color;
+$yellow: $yellow_color;
+
+// $accent_red: #e02020;
+// $accent_red_10: lighten($accent_red, 10%);
+// $accent_green: #66ae13;
+// $accent_green_10: lighten($accent_green, 10%);
+$accent_yellow: $yellow_color;
+$accent_yellow_10: lighten($accent_yellow, 10%);
+
+// Fonts
+$primary_font: 'Work Sans';
+$secondary_font: 'Roboto';
+
+$primary_font_color: #787878;
+$primary_font_color_10: lighten($primary_font_color, 10%);
+
+// Radius
+$small_radius: 8px;
+$primary_radius: 16px;
+$secondary_radius: 24px;
+$teritary_radius: 32px;
+
+// Sizes
+$full_width: 1200px;
+$half_width: 600px;
+$quarter_width: 300px;
+$mobile-only: 768px;
+
+// Box-shadow
+$fluid_menu_shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.09);
+$card_shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+$auth_card_shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.08);
+

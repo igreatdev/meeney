@@ -1,0 +1,13 @@
+
+@import 'styles/var';
+@import '~bootstrap/scss/bootstrap.scss';
+
+body {
+  margin: 0;
+  font-family: $primary_font;
+  font-size: 15px;
+  color: $primary_font_color;
+  background-color: $background_color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
