@@ -1,7 +1,7 @@
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Progress } from 'antd';
-import { Button, Card, Col, Nav, InputGroup, FormControl, Dropdown, ListGroup, Tabs, Tab } from 'react-bootstrap';
+import { Button, Card, Col, Tabs, Tab } from 'react-bootstrap';
 
 const Title = () => (
     <Card className="bg-default">
