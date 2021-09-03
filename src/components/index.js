@@ -1,2 +1,4 @@
 export { LeftSidebar, RightSidebar } from './Sidebar';
-export { default as Post } from './Post';
+export { Post, SharePost } from './Post';
+export { ProfileCard } from './Profile';
+export { Header } from './Header';
